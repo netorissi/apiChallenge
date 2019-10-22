@@ -3,22 +3,27 @@
 ## * Projeto desafio API RESTful stateless sem autenticação
 
 Projeto desenvolvido em C# .NET que consiste em um simples CRUD de enquetes.
+
 Você pode executar com Docker ou caso não seja com Docker, você terá que fazer algumas alterações.
 
 ## Executar COM Docker
 
 **Atenção: Tenha o Docker instalado em sua máquina.**
+
 *Caso não tenha, procure pelo download [AQUI](https://www.docker.com/products/docker-desktop)*
 
 1. Baixe o projeto, abra o console ou terminal, acessa a pasta raiz do projeto e execute a seguinte linha:
 
 ```docker-compose up```
+
 *O banco será iniciado e já será criado as estruturas de tabelas*
 
 2. Agora com a API no ar, basta direcionar seu projeto para os ENDPOINTS, também pode utilizar o [Postman](https://www.getpostman.com/downloads/), [Insomnia](https://insomnia.rest/download/), ou outro de sua preferência:
 
 - Inserir uma enquete:
+
 **POST** ```http://localhost:5000/api/v1/poll```
+
 - Corpo da requisição:
 ```
 {
@@ -32,10 +37,13 @@ Você pode executar com Docker ou caso não seja com Docker, você terá que faz
 ```
 
 - Consultar uma enquete: *Params: {id} da enquete*
+
 **GET** ```http://localhost:5000/api/v1/poll/{id}```
 
 - Inserir um voto em uma enquete: *Params: {id} da enquete*
+
 **POST** ```http://localhost:5000/api/v1/poll/{id}/vote```
+
 - Corpo da requisição deve conter a opção a ser votada:
 ```
 {
@@ -44,9 +52,11 @@ Você pode executar com Docker ou caso não seja com Docker, você terá que faz
 ```
 
 - Consultar estatísticas de uma enquete: *Params: {id} da enquete*
+
 **GET** ```http://localhost:5000/api/v1/poll/{id}/stats```
 
 - Consultar todas as enquetes:
+
 **GET** ```http://localhost:5000/api/v1/poll```
 
 ## Executar SEM Docker
