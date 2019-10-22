@@ -12,7 +12,7 @@ Você pode executar com Docker ou caso não seja com Docker, você terá que faz
 
 *Caso não tenha, procure pelo download [AQUI](https://www.docker.com/products/docker-desktop)*
 
-1. Baixe o projeto, abra o console ou terminal, acessa a pasta raiz do projeto e execute a seguinte linha:
+1. Baixe o projeto, abra o console ou terminal, acesse a pasta raiz do projeto e execute a seguinte linha:
 
 ```docker-compose up```
 
