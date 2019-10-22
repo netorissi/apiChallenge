@@ -2,7 +2,7 @@
 
 ## * Projeto desafio API RESTful stateless sem autenticação
 
-Projeto desenvolvido em C# .NET que consiste em um simples CRUD de enquetes.
+Projeto desenvolvido em C# .NETCore e MySQL que consiste em um simples CRUD de enquetes.
 
 Você pode executar com Docker ou caso não seja com Docker, você terá que fazer algumas alterações.
 
@@ -19,6 +19,8 @@ Você pode executar com Docker ou caso não seja com Docker, você terá que faz
 *O banco será iniciado e já será criado as estruturas de tabelas*
 
 2. Agora com a API no ar, basta direcionar seu projeto para os ENDPOINTS, também pode utilizar o [Postman](https://www.getpostman.com/downloads/), [Insomnia](https://insomnia.rest/download/), ou outro de sua preferência:
+
+*Todos os endpoints deverão	ser	com	Content-Type: application/json.*
 
 - Inserir uma enquete:
 
@@ -59,11 +61,13 @@ Você pode executar com Docker ou caso não seja com Docker, você terá que faz
 
 **GET** ```http://localhost:5000/api/v1/poll```
 
+*Você pode acessar o phpmyadmin na porta 3010 caso seja necessário.*
+
 ## Executar SEM Docker
 
 **Atenção: Tenha o dotnetSDK2.2 instalado em sua máquina.**
 
-1. Baixe o projeto e execute um banco MySql utilizando o arquivo sql disponível em **./schema/init.sql**
+1. Baixe o projeto e execute um servidor com um banco MySql utilizando o arquivo sql disponível em **./schema/init.sql**
 
 2. Vá até o arquivo *appsettings.json* que está dentro da pasta *Poll_Challenge_Api* e altere a seguinte linha de código:
 
