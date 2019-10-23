@@ -10,13 +10,18 @@ Você pode executar com Docker ou caso não seja com Docker, você terá que faz
 
 **Atenção: Tenha o Docker instalado em sua máquina.**
 
-*Caso não tenha, procure pelo download [AQUI](https://www.docker.com/products/docker-desktop)*
+*Caso não tenha, procure pelo download [AQUI](https://www.docker.com/)*
 
 1. Baixe o projeto, abra o console ou terminal, acesse a pasta raiz do projeto e execute a seguinte linha:
 
 ```docker-compose up```
 
 *O banco será iniciado e já será criado as estruturas de tabelas*
+
+Serão criados 3 contâiners:
+- MySQL versão 8 => Banco de dados
+- PhpMyAdmin versão 4.8 => Para facilitar o acesso ao banco (user e password: root)
+- Aplicação versão 1.0 => Api .NET rodando na porta 5000
 
 2. Agora com a API no ar, basta direcionar seu projeto para os ENDPOINTS, também pode utilizar o [Postman](https://www.getpostman.com/downloads/), [Insomnia](https://insomnia.rest/download/), ou outro de sua preferência:
 
