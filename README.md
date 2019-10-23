@@ -18,9 +18,9 @@ Você pode executar com Docker ou caso não seja com Docker, você terá que faz
 
 *O banco será iniciado e já será criado as estruturas de tabelas*
 
-Serão criados 3 contâiners:
+Serão criados 3 containers:
 - MySQL versão 8 => Banco de dados
-- PhpMyAdmin versão 4.8 => Para facilitar o acesso ao banco (user e password: root)
+- PhpMyAdmin versão 4.8 => Para facilitar o acesso ao banco (user: root, password: secret)
 - Aplicação versão 1.0 => Api .NET rodando na porta 5000
 
 2. Agora com a API no ar, basta direcionar seu projeto para os ENDPOINTS, também pode utilizar o [Postman](https://www.getpostman.com/downloads/), [Insomnia](https://insomnia.rest/download/), ou outro de sua preferência:
